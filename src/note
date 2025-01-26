@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="welcome">
+            <div class="information">
+                <h1>PeerLab</h1>
+                <div class="important">
+                    <div class="important__text">15 февраля 18:00
+                        <br>Москва, Око
+                    </div>
+                    <button class="btn">Хочу на PeerLab!</button>
+                </div>
+                <div class="description">
+                    <div class="description-info">
+                        камерный митап
+                        <br>без докладов
+                        <br>для мобильных
+                        <br>разработчиков,
+                        <br>где каждый может предложить кейс
+                        <br>для обсуждения
+                    </div>
+                    <div class="wrapper">
+                        <div class="description-author" id="yandex_pro">
+                            <img src="icons/yandex_pro.png" alt="Yandex Pro">
+                            <div class="description-author__text">от команды
+                                Яндекс про</div>
+                        </div>
+                        <div class="description-author" id="yandex_go">
+                            <img src="icons/yandex_go.svg" alt="Yandex Go">
+                            <div class="description-author__text">и Яндекс Go</div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img class="arrow__img" src="img/arrow_right.png" alt="Arrow">
+                        <img class="arrow__img" src="img/arrow_left.png" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background: #1E1E1E;
+font-family: "Seymour One";
+}
+
+.information {
+width: 1280px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 70px;
+margin: 297px auto 0 auto;
+}
+
+h1 {
+color: var(--Go-White-FFFFFF, #FFF);
+/* Сомнительно */
+text-align: center;
+
+font-size: 160px;
+font-weight: 400;
+line-height: 160px;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+}
+
+.important {
+width: 1280px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.important__text {
+color: #FFF;
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.24px;
+text-transform: uppercase;
+}
+
+.btn {
+padding: 24px 32px;
+border-radius: 20px;
+border: 0px;
+background: #FFDE40;
+color: #000;
+font-family: "GT Walsheim Pro";
+font-size: 20px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0.2px;
+cursor: pointer;
+}
+
+.description-info {
+color: #FFDE40;
+text-align: center;
+font-family: "Seymour One";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 64.044px;
+letter-spacing: -2.4px;
+text-transform: uppercase;
+}
+
+#yandex_pro .description-author__text {
+max-width: 156px;
+color: #FFF;
+text-align: center;
+font-family: "GT Walsheim Pro";
+font-size: 28px;
+font-weight: 500;
+line-height: 28.019px;
+letter-spacing: -0.28px;
+transform: rotate(-12.96deg);
+}
+
+#yandex_go .description-author__text {
+color: #FFF;
+font-family: "GT Walsheim Pro";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 28.019px;
+letter-spacing: -0.28px;
+transform: rotate(-3.751deg);
+}
+
+.wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.description-author {
+display: flex;
+align-items: flex-end;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+}
+
+#yandex_go {
+display: flex;
+flex-direction: row;
+}
+
+.arrow {
+display: flex;
+justify-content: center;
+}
+
+.arrow__img {
+width: 231.749px;
+}
