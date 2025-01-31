@@ -12,6 +12,32 @@
     <main>
         <section>
             <div class="welcome">
+                <div class="background">
+                    <img src="img/@.svg" alt="@" id="at">
+                    <img src="img/x.svg" alt="x" class="circle" id="x">
+                    <img src="img/oko.png" alt="oko" id="oko">
+                    <img src="img/goose.svg" alt="goose" class="pulse" id="goose">
+                    <img src="img/tape.svg" alt="" id="tape">
+                    <img src="img/smile.svg" alt="" id="smile" class="pulse">
+                    <div class="hello__board">
+                        <div class="board__header">
+                            <p class="board__title">Hello</p>
+                            <p class="board__text">Митап пройдёт</p>
+                        </div>
+                        <div class="date">
+                            <p>15 февраля
+                            18:00 GMT+3</p>
+                        </div>
+                    </div>
+                    <img src="img/mobile.svg" alt="" id="mobile">
+                    <img src="img/question.svg" alt="" id="question">
+                    <img src="img/number_one.svg" alt="" id="number_one">
+                    <img src="img/griffin.svg" alt="" class="circle" id="griffin">
+                    <img src="img/psy.svg" alt="" id="psy">
+                    <img src="img/smile.svg" alt="" id="smile_2">
+                    <img src="img/meme.svg" alt="" id="meme">
+                    <img src="img/tape_2.svg" alt="" id="tape_2">
+                </div>
                 <div class="information">
                     <header class="header">
                         <h1>PeerLab</h1>
@@ -19,36 +45,36 @@
                             <div class="important__text">15 февраля 18:00
                                 <br>Москва, Око
                             </div>
-                            <button class="btn">Хочу на PeerLab!</button>
+                            <button class="btn" onclick="location.href='#registration'">Хочу на PeerLab!</button>
                         </div>
                     </header>
-                    <div class="description">
-                        камерный митап
-                        <br>без докладов
-                        <br>для мобильных
-                        <br>разработчиков,
-                        <br>где каждый может предложить кейс
-                        <br>для обсуждения
-                    </div>
-                    <div class="author">
-                        <div class="wrapper">
-                            <div class="description-author" id="yandex_pro">
-                                <img src="icons/yandex_pro.png" alt="Yandex Pro">
-                                <div class="description-author__text">от команды
-                                    Яндекс про</div>
-                            </div>
-                            <div class="description-author" id="yandex_go">
-                                <img src="icons/yandex_go.svg" alt="Yandex Go">
-                                <div class="description-author__text">и Яндекс Go</div>
-                            </div>
-                        </div>
-                        <div class="arrow">
-                            <img class="arrow__img" src="img/arrow_right.png" alt="Arrow">
-                            <img class="arrow__img" src="img/arrow_left.png" alt="Arrow">
-                        </div>
+                    <div class="description" id="descript">
+                        <span id="desc1">камерный</span> <span id="desc2">митап</span>
+                        <br><span id="desc3">митап</span> <span id="desc4">докладов</span>
+                        <br><span id="desc5">для</span> <span id="desc6">мобильных</span>
+                        <br><span id="desc7">разработчиков,</span>
+                        <br><span id="desc8">где</span> <span id="desc9">каждый</span> <span id="desc10">может</span>
+                        <br><span id="desc11">предложить</span> <span id="desc12">кейс</span>
+                        <br><span id="desc13">для</span><span id="desc14">обсуждения</span>
                     </div>
                 </div>
             </div>
+            <div class="author">
+                <div class="wrapper">
+                    <div class="description-author" id="yandex_pro">
+                        <img src="icons/yandex_pro.png" alt="Yandex Pro">
+                        <div class="description-author__text">от команды
+                            Яндекс про</div>
+                    </div>
+                    <div class="description-author" id="yandex_go">
+                        <img src="icons/yandex_go.svg" alt="Yandex Go">
+                        <div class="description-author__text">и Яндекс Go</div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img class="arrow__img" src="img/arrow_right.png" alt="Arrow" id="yandex_pro">
+                    <img class="arrow__img" src="img/arrow_left.png" alt="Arrow" id="yandex_go">
+                </div>
             </div>
             <div class="schedule">
                 <div class="gathering">
@@ -73,7 +99,7 @@
                                         <h3>ios</h3>
                                         <div class="speakers">
                                             <div class="person">
-                                                <img src="img/lubov.png" alt="Lubov Polyanskaya" class="person__img">
+                                                <div class="img__block"><img src="img/lubov.png" alt="Lubov Polyanskaya" class="person__img"></div>
                                                 <div class="person-description">
                                                     <div class="person__name">Любовь Полянская
                                                     </div>
@@ -81,7 +107,7 @@
                                                 </div>
                                             </div>
                                             <div class="person">
-                                                <img src="img/sergey_n.png" alt="Sergey Nanaev" class="person__img">
+                                                <div class="img__block"><img src="img/sergey_n.png" alt="Sergey Nanaev" class="person__img"></div>
                                                 <div class="person-description">
                                                     <div class="person__name">Сергей Нанаев
                                                     </div>
@@ -126,7 +152,7 @@
                                         <h3>android</h3>
                                         <div class="speakers">
                                             <div class="person">
-                                                <img src="img/aleksandr_b.png" alt="Aleksandr Bonel" class="person__img">
+                                                <div class="img__block"><img src="img/aleksandr_b.png" alt="Aleksandr Bonel" class="person__img"></div>
                                                 <div class="person-description">
                                                     <div class="person__name">Александр Бонель
                                                     </div>
@@ -172,7 +198,7 @@
                                         <h3>flutter</h3>
                                         <div class="speakers">
                                             <div class="person">
-                                                <img src="img/gennadiy.png" alt="Gennadiy Evstratov" class="person__img">
+                                                <div class="img__block"><img src="img/gennadiy.png" alt="Gennadiy Evstratov" class="person__img"></div>
                                                 <div class="person-description">
                                                     <div class="person__name">Геннадий Евстратов
                                                     </div>
@@ -180,7 +206,7 @@
                                                 </div>
                                             </div>
                                             <div class="person">
-                                                <img src="img/sergey_k.png" alt="Sergey Koltsov" class="person__img">
+                                                <div class="img__block"><img src="img/sergey_k.png" alt="Sergey Koltsov" class="person__img"></div>
                                                 <div class="person-description">
                                                     <div class="person__name">Сергей Кольцов
                                                     </div>
@@ -214,11 +240,11 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <button class="btn">Решите мой кейс</button>
+                        <button class="btn" onclick="location.href='#registration'">Решите мой кейс</button>
                     </div>
                 </div>
                 <div class="gathering afterparty">
-                    <div class="gathrting__time afterpaty__time">
+                    <div class="gathering__time afterpaty__time">
                         20:00
                     </div>
                     <div class="gathering__text afterparty__text">
@@ -228,7 +254,7 @@
             </div>
         </section>
         <section>
-            <div class="registration">
+            <div class="registration" id="registration">
                 <div class="info_and_form">
                     <div class="registration-info">
                         <h2>регистрация</h2>
@@ -237,22 +263,23 @@
                         подтверждения
                         вашего участия от организаторов по электронной почте</p></div>
                     </div>
-                    <form action="" class="registration-form">
-                        <input type="text" id="first_name" placeholder="Имя">
-                        <input type="text" id="last_name" placeholder="Фамилия">
-                        <input type="email" id="email" placeholder="Почта">
-                        <input type="text" id="phone" placeholder="Номер телефона">
-                        <input type="text" id="work" placeholder="Место работы">
-                        <input type="text" id="post" placeholder="Должность">
-                        <textarea name="" id="" placeholder="Какую проблему в мобильной разработке вы бы хотели обсудить?"></textarea>
-                    </form>
+                    <form action="registration" class="registration-form">
+                    <div action="registration" class="registration-form">
+                        <input type="text" class="registration-form__input" id="first_name" placeholder="Имя">
+                        <input type="text" class="registration-form__input" id="last_name" placeholder="Фамилия">
+                        <input type="email" class="registration-form__input" id="email" placeholder="Почта">
+                        <input type="text" class="registration-form__input" id="phone" placeholder="Номер телефона">
+                        <input type="text" class="registration-form__input" id="work" placeholder="Место работы">
+                        <input type="text" class="registration-form__input" id="post" placeholder="Должность">
+                        <textarea name="" id="" class="registration-form__input" placeholder="Какую проблему в мобильной разработке вы бы хотели обсудить?"></textarea>
+                    </div>
                 </div>
                 <div class="agreement_and_button">
                     <div class="agreement">
                         <div class="agree">
                             <input class="custom-checkbox" id="codex" type="checkbox">
-                            <label for="codex" class="agree__text">Я даю согласие придерживаться <a href="">Кодекса проведения конференции</a>
-                            на онлайн и офлайн мероприятиях, организованных ООО «Яндекс»</label>
+                            <label for="codex" class="agree__text"><div class="wrapper__label">Я даю согласие придерживаться <a href="">Кодекса проведения конференции</a>
+                            на онлайн и офлайн мероприятиях, организованных ООО «Яндекс»</div></label>
                         </div>
                         <div class="agree">
                             <input class="custom-checkbox" id="personal" type="checkbox">
@@ -272,8 +299,9 @@
                             законом «О персональных данных»</label>
                         </div>
                     </div>
-                    <button class="btn">Зарегистрироваться</button>
+                    <button type="submit" class="btn">Зарегистрироваться</button>
                 </div>
+                </form>
             </div>
         </section>
         <section class="map_and_location">
@@ -306,15 +334,17 @@
                 </div>
                 <div class="taxi">
                     <img class="taxi__logo" src="/src/icons/yandex_taxi.svg" alt="Yandex Go" class="taxi__img">
-                    <button class="btn">Поехать на такси
+                    <button class="btn" onclick="window.location = 'https://taxi.yandex.ru/?utm_source&utm_medium&gfrom=%2C&gto=55.750028%20%2C37.534406%20&ref&level&city&tariff&referrer=appmetrica_tracking_id%3D25395763362139037%26ym_tracking_id%3D2396510157826562737';">Поехать на такси
                         <div class="button-arrow">
                             <img src="/src/icons/arrow.svg" alt="">
                         </div>
                     </button>
                 </div>
             </div>
+            <img src="img/where.svg" alt="" id="where">
         </section>
     </main>
 </body>
-
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts_form.js"></script>
 </html>
