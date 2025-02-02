@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "GT Walsheim Pro";
+    src: local("GT Walsheim Pro"),
+        url("../fonts/GTWalsheimPro-Regular.woff2") format("woff2"),
+        url("../fonts/GTWalsheimPro-Regular.woff") format("woff"),
+        url("../fonts/GTWalsheimPro-Regular.ttf") format("ttf"),
+        url("../fonts/GTWalsheimPro-Regular.eot") format("eot");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Seymour One'), url('../fonts//SeymourOne-Regular.ttf') format('TrueType');
+}
